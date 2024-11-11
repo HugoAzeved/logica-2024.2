@@ -1,0 +1,20 @@
+<script>
+
+    //4 - Cálculo de iluminação: Escreva um programa que calcule o número de lâmpadas necessárias para iluminar uma sala. O usuário deve informar as dimensões da sala e a potência de cada lâmpada, e o programa deve indicar quantas lâmpadas são necessárias.
+    
+    
+    //entrada
+    let potenciaLamp = parseFloat(prompt("potencia da lampada utilizada"))
+    let largura = parseFloat(prompt("lagura do comodo"))
+    let comprimento = parseFloat(prompt("comprimento do comodo"))
+    
+    //processamento
+    let area = largura * comprimento
+    let wattsTotal = 15 * area
+    let quantidadelamp = wattsTotal / potenciaLamp
+    
+    //saida
+    document.write("a quantidade de lampadas necessaria seriam:" + quantidadelamp)
+    
+    
+    </script>
