@@ -8,7 +8,7 @@ let OdoFinal = prompt("informe o odômetro final")
     let LucPass = prompt("informe o lucro do passageiro")
     
     //processamento
-    let Medi_comb = OdoInicial + OdoFinal / ConsumoCombustivel
+    let Medi_comb = OdoInicial - OdoFinal / ConsumoCombustivel
     let LucroLiqui = LucPass - (ConsumoCombustivel * 4.87)
     
     //saida
