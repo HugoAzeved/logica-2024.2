@@ -1,0 +1,35 @@
+<script>
+// 19) Escreva um programa para ler 3 valores e escrever a soma dos 2 maiores. Considere que o usuário não informará valores iguais.
+
+
+let n1 = parseFloat(prompt("Digite o primeiro numero"))
+let n2 = parseFloat(prompt("Digite o segundo numero numero"))
+let n3 = parseFloat(prompt("Digite o terceiro numero numero"))
+
+let resposta = 0
+if (n1 > n2 && n1 > n3) {
+   resposta = n1
+    if (n2 > n3) {
+        resposta = n1 + n2
+    } else if (n3 > n2) {
+        resposta = n1 + n3
+    }
+} else if (n2 > n1 && n2 > n3) {
+    resposta = n2 
+    if (n1 > n3) {
+        resposta = n2 + n1
+    } else if (n3 > n1) {
+        resposta = n2 + n3
+    }
+} else if (n3 > n1 && n3 > n2) {
+    resposta = n3
+    if (n2 > n1) {
+        resposta = n3 + n2
+    } else if (n1 > n2) {
+        resposta = n3 + n1
+    }
+}
+
+document.write("a soma dos dois maiores numeros é: " + resposta)
+
+</script>
