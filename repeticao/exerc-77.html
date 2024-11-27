@@ -1,0 +1,29 @@
+<script>
+    //77) Fazer um algoritmo que:
+    //• Leia um número indeterminado de linhas contendo cada uma a idade de um indivíduo.
+    //• Calcule e escreva a idade média deste grupo de indivíduos.
+
+
+let totalIdade = 0
+let quantidade = 0
+let idade = 2
+
+while(idade !== "" ) {
+    idade = prompt("digite a idade: ");
+    
+    if(idade !== "") {
+        totalIdade += parseInt(idade); 
+        quantidade++
+    }
+}
+
+if(quantidade > 0) {
+let media = totalIdade / quantidade
+    document.write("A media das idade é " + media);
+} else {
+    document.write("Idade não inserida.");
+}
+
+
+
+</script>
