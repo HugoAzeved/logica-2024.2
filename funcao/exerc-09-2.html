@@ -4,16 +4,25 @@
 
 //entrada
 let maca = parseFloat(prompt("quantas maçãs vai querer?"))
+
+
 //processamento
+function CalculoMacas (maca) {
 let resposta = ""
-if (maca < 12) {
+    if (maca < 12) {
     resposta = 0.30
-} else {
+    } else {
     resposta = 0.25
+    }
+
+    let ValorT = resposta * maca
+return [ValorT]
+
 }
-let ValorT = resposta * maca
+
 
 //saida
-document.write("o valor será: " + ValorT)
+let resposta = CalculoMacas(maca)
+document.write("o valor será: " + resposta)
 
 </script>

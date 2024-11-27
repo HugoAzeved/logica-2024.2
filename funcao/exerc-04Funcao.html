@@ -16,10 +16,14 @@ let largura = parseFloat(prompt("lagura do comodo"))
 let comprimento = parseFloat(prompt("comprimento"))
 
 //processamento
+function QuantiLamp (potenciaLampada, lagura, comprimento) {
 let area = largura * comprimento
 let wattsTotal = 18 * area
 let quantidadelampadas = wattsTotal / potenciaLampada
+}
 
 //saida
-document.write("a quantidade de lampadas necessaria é:" + quantidadelampadas)
+document.write("a quantidade de lampadas necessaria é:" + QuantiLamp(potenciaLampada, largura, comprimento))
+
+
 </script>

@@ -1,0 +1,45 @@
+<script>
+    //20) Escreva um programa para ler 3 valores e escrevê-los em ordem decrescente. Considere que o usuário não informará valores iguais.
+    
+let N1 = parseFloat(prompt("Digite o primeiro numero"))
+let N2 = parseFloat(prompt("Digite o segundo numero numero"))
+let N3 = parseFloat(prompt("Digite o terceiro numero numero")) 
+
+let menor, meio, maior
+
+if (N1 > N2 && N1 > N3) {
+    maior = N1;
+    if (N2 > N3) {
+        menor = N2
+        meio = N3
+    } else {
+        menor = N3
+       meio = N2
+    }
+} else if (N2 > N1 && N2 > N3) {
+    maior = N2
+    if (N1 > N3) {
+        menor = N1
+        meio = N3
+    } else {
+        menor = N3
+        meio = N1
+    }
+} else {
+    maior = N3
+    if (N1 > N2) {
+        meio = N1
+        menor = N2
+    
+    } else {
+        menor = N2
+        meio = N1
+    }
+}
+ 
+//saida
+document.write("Os numeros na ordem decrescente são: " + maior + ", " + meio + ", " + menor)
+
+
+
+</script>

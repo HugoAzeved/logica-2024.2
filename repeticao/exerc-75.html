@@ -1,0 +1,37 @@
+<script>
+    //75) Elabore um algoritmo que gere e escreve os números ímpares entre números entre 100 e 200.
+//entrada
+let Num1 = parseInt(prompt("Digite o primeiro valor"))
+let Num2 = parseInt(prompt("Digite o ultimo valor"))
+
+
+//processamento
+function numImpares() {
+    let resposta = ""
+for(let num = 100; num <= 200; num++) {
+    if(num % 2 == 1) {
+        resposta += num + ", "
+    }
+}
+return resposta
+}
+
+function numImparesWhile(inicio, final) {
+    let resposta = ""
+    if(final < inicio) return "valores invalidos!"
+for (let num = inicio; num <= final; num++) {
+    if (num % 2 != 0){
+        resposta += num + ", "
+    }
+}
+ return resposta
+}
+
+//saida
+document.write("Numeros impares sao: <br>" + numImparesWhile(Num1, Num2))
+
+
+
+
+    
+</script>

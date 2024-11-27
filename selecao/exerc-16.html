@@ -1,0 +1,33 @@
+<script>
+
+// 16) Acrescente as seguintes mensagens à solução do exercício anterior conforme o caso. - Caso o número de lados seja inferior a 3 escrever NÃO É UM POLÍGONO. - Caso o número de lados seja superior a 5 escrever POLÍGONO NÃO IDENTIFICADO. 
+
+
+let numero = parseFloat(prompt("Digite o numero de lado do polígono:"))
+let Mlado = parseFloat(prompt("Digite a medida do lado do polígono em cm:"))
+
+let resposta = 0
+
+if ( numero < 3) {
+    alert("Não é um polígono.")
+} else if ( numero === 3) {
+    let perimetro = Mlado * 3
+    alert("Triangulo, o perimetro é: " + perimetro + " cm")
+} else if ( numero === 4) {
+    let area = Mlado * Mlado
+    alert("Quadrado, numero da área é: " + area + " cm²")
+} else if (numero === 5 ) {
+    alert("Pentagono")
+} else if (numero > 5) {
+    alert("Polígono não indetificado!")
+}
+
+
+
+
+
+
+
+
+
+</script>

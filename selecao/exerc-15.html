@@ -1,0 +1,24 @@
+<script>
+//15) Escreva um programa para ler o número de lados de um polígono regular e a medida do lado (em cm). Calcular e imprimir o seguinte: - Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor do seu perímetro. - e o número de lados for igual a 4 escrever QUADRADO e o valor da sua área. - Se o número de lados for igual a 5 escrever PENTÁGONO. 
+
+let numero = parseFloat(prompt("Digite o numero de lado do polígono:"))
+let Mlado = parseFloat(prompt("Digite a medida do lado do polígono em cm:"))
+
+let resposta = 0
+if ( numero === 3) {
+    let perimetro = Mlado * 3
+    alert("Triangulo, o perimetro é: " + perimetro + " cm")
+} else if ( numero === 4) {
+    let area = Mlado * Mlado
+    alert("Quadrado, numero da área é: " + area + " cm²")
+} else if (numero === 5 ) {
+    alert("Pentagono")
+}
+
+
+
+
+
+
+
+</script>

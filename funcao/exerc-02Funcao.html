@@ -6,15 +6,20 @@ let temperatura = prompt ("digite a temperatura em graus Fahrenheit")
 console.log ("temp. F:",temperatura) 
 
 //processamento
-let resultado = (temperatura -32) * 5 / 9
+
+function temperaturaC(temperatura) {
+
+    let resultado = (temperatura -32) * 5 / 9
 console.log ("Resp:", resultado)
 
+return resultado
+
+}
+
+
+
 //saida
-//alert ("o valor correspondente em graus Celsius é:" + resultado) servem pra mesma coisa
-document.write("o valor correspondente em graus Celsius é:" + resultado)
-
-
-
+document.write("o valor correspondente em graus Celsius é:" + temperaturaC(temperatura))
 
 
 </script>
