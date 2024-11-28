@@ -1,0 +1,29 @@
+<script>
+//106) Escrever um algoritmo que leia um vetor de tamanho 30 e o escreve. Substitua, a seguir, todos os valores nulos (zero) deste vetor por 1 e escreva novamente o vetor.
+
+
+//funcao
+function comeco (tamanho) {
+let algoritmos = []
+
+for(let i = 0; i < tamanho; i++) {
+    //entrada
+    algoritmos[i] = parseInt(prompt(`Digite o ${i + 1} valor`))
+    if (algoritmos[i] === 0) {
+        algoritmos[i] = 1;
+    }
+}
+
+return algoritmos;
+}
+
+//funcao chamada
+let resultado = comeco(5)
+
+//saida
+
+document.write("Substituicao: " + `${resultado}, `)
+
+
+
+</script>

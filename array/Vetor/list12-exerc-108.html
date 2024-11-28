@@ -1,0 +1,23 @@
+<script>
+//108) Escrever um algoritmo que leia um vetor com 50 posições de números inteiros e mostre somente os valores positivos.
+
+function positivo (tamanho) {
+let numeros = [];
+let resposta= ``
+let numero = parseInt(prompt(`Digite o ${i +1} valor: `))
+
+    for (let i = 0; i < tamanho.length; i++) {
+        numeros[i] = numero
+    if (numeros[i] > 0) {
+        resposta += `${numeros[i]}, `
+        }
+    }
+    return resposta
+}
+
+//chamndo a funcao
+let resultado = positivo(5)
+
+document.write(`Os numeros positivos são: ${resultado}`)
+
+</script>
