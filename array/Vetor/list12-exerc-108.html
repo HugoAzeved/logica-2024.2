@@ -4,9 +4,10 @@
 function positivo (tamanho) {
 let numeros = [];
 let resposta= ``
-let numero = parseInt(prompt(`Digite o ${i +1} valor: `))
 
-    for (let i = 0; i < tamanho.length; i++) {
+
+    for (let i = 0; i < tamanho; i++) {
+        let numero = parseInt(prompt(`Digite o ${i +1} valor: `))
         numeros[i] = numero
     if (numeros[i] > 0) {
         resposta += `${numeros[i]}, `
@@ -16,8 +17,7 @@ let numero = parseInt(prompt(`Digite o ${i +1} valor: `))
 }
 
 //chamndo a funcao
-let resultado = positivo(5)
-
+let resultado = positivo(50)
 document.write(`Os numeros positivos são: ${resultado}`)
 
 </script>
