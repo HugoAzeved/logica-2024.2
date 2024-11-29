@@ -1,17 +1,18 @@
 <script>
-    //107) Escreva um algoritmo que leia e mostre um vetor de 20 elementos inteiros. A seguir, o algoritmo deverá contar quantos valores pares existem no vetor.
+//107) Escreva um algoritmo que leia e mostre um vetor de 20 elementos inteiros. A seguir, o algoritmo deverá contar quantos valores pares existem no vetor.
 
 
 
-    function entradaValores (tamanho) {
+function entradaValores (tamanho) {
+
 let valores = []
 let resposta = 0
+
     for(let i =0; i < tamanho; i++) {
     valores[i]= parseInt(prompt(`digite o ${i + 1} valor:`))
     if (valores[i] % 2 === 0) {
         resposta ++;
     }
-
 }
 return resposta
 }
@@ -19,6 +20,5 @@ return resposta
 let resultado = entradaValores(20)
 
 document.write(`Quantidade de numeros pares: ${resultado}`)
-
 
 </script>
