@@ -1,0 +1,77 @@
+<script>
+    //info da conta
+let titular = "Hugo Azevedo"
+let saldo = 2000
+let tipo = "Corrente" //corrente ou poupança
+
+
+    //menu
+let opcao= -1
+while(opcao != 0) {
+    opcao = prompt(`
+    Titular:${titular} | Saldo atual: R$${saldo}
+    [1]- Deposito
+    [2]- Saque
+    [3]- Saldo
+    [4]- Exibir Dados
+    [0]- sair
+`)
+if (opcao == 1){
+    let valor = parseFloat(prompt("Valor do deposito:"))
+    saldo = deposito(valor)
+    alert(`Foram adicionado na sua conta R$${valor} reais| Total da conta atual é R$${saldo} reais`)
+}
+if (opcao == 2) {
+    let valor = parseFloat(prompt("Quanto deseja retirar:"))
+    if (valor < saldo) {
+    saldo = retirada(valor)
+    alert(`Foram retirados da sua conta R$${valor} reais| Total da conta atual é R$${saldo} reais`)
+    } else {
+        alert(`Saldo Insuficiente`)
+    }
+}
+if (opcao == 3) {
+    alert(`seu saldo atual é R$${saldo}`)
+}
+if (opcao == 4) {
+    alert (exibirDados())
+}
+}
+
+
+    //funções da conta
+function deposito(valor) {
+    saldo = saldo + valor
+    return saldo
+}
+
+function retirada(valor) {
+    if (valor < saldo ) {
+        saldo = saldo - valor 
+        return saldo
+    }
+    return saldo
+}
+
+function saldoAtual() {
+    return saldo
+}
+
+function exibirDados() {
+    return [`Titular:${titular} | Saldo atual: R$${saldo} | Tipo de conta: ${tipo}`]
+}
+
+    //entrada(test)
+function senha(){
+let resultado = ""
+let senha = prompt(`Ola ${titular}, digite sua senha:`)
+
+if (senha === "2004") {
+    resultado
+} else {
+    resultado
+}
+return resultado
+}
+
+</script>
