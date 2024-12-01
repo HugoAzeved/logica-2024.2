@@ -1,0 +1,24 @@
+<script>
+    //110) Escrever um algoritmo que lê um vetor de tamanho 20 e o escreve na tela. Encontre, a seguir, o menor elemento e a sua posição no vetor e escreva: "O menor elemento do vetor = ... e a sua posição é ... ".
+
+
+let vetor = [];
+
+for(let i = 0; i < 5; i++) {
+    let valor = parseInt(prompt(`Digite o ${i + 1}° valor:`))
+    vetor[i] = valor
+}
+
+let menorNumero = vetor[0];
+let posicaoMenorNumero = 0;
+
+for (let i = 0; i < 5; i++){
+    if( vetor[i] < menorNumero) {
+        menorNumero = vetor[i];
+        posicaoMenorNumero = i;
+    }
+}
+
+document.write(`O menor elemento do vetor = ${menorNumero} e a sua posição é ${posicaoMenorNumero}`);
+
+</script>
